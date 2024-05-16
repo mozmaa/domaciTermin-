@@ -26,13 +26,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
-			<optional>true</optional>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		    <scope>runtime</scope>
 		</dependency>
+
 		<dependency>
 		    <groupId>org.webjars</groupId>
 		    <artifactId>bootstrap</artifactId>
@@ -44,8 +45,13 @@
 		    <version>0.47</version>
 		    <scope>runtime</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.momirgajic.practice</groupId>
+			<artifactId>practice</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
-
+	
 	<build>
 		<plugins>
 			<plugin>

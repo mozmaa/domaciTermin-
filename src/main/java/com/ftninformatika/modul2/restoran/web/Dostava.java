@@ -76,6 +76,20 @@ public class Dostava {
 		restorani.put(1L, new Restoran(1L, "Restoran 1", 150, adrese.get(1L)));
 		restorani.put(2L, new Restoran(2L, "Restoran 2", 250, adrese.get(2L)));
 		restorani.put(3L, new Restoran(3L, "Restoran 3", 200, adrese.get(3L)));
+		
+		//povezivanje kategorije i artikla
+		
+		kategorije.get(1L).addArtikal(artikli.get(1L));
+		kategorije.get(1L).addArtikal(artikli.get(2L));
+		kategorije.get(2L).addArtikal(artikli.get(3L));
+		kategorije.get(2L).addArtikal(artikli.get(4L));
+		kategorije.get(3L).addArtikal(artikli.get(5L));
+		kategorije.get(3L).addArtikal(artikli.get(6L));
+		kategorije.get(4L).addArtikal(artikli.get(7L));
+		kategorije.get(4L).addArtikal(artikli.get(8L));
+		kategorije.get(5L).addArtikal(artikli.get(9L));
+		kategorije.get(5L).addArtikal(artikli.get(10L));
+		kategorije.get(5L).addArtikal(artikli.get(11L));
 
 		// povezivanje restorana i kategorija
 		restorani.get(1L).addKategorija(kategorije.get(1L));

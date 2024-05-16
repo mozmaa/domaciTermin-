@@ -44,7 +44,7 @@ public class StavkaPorudzbine {
 		this.kolicina = kolicina;
 	}
 	
-	public String prikazStavke() {
+	public String getPrikazStavke() {
 		return this.kolicina + " x " + artikal.getNaziv() + " = " + decfor.format(kolicina * artikal.getCena()) + " RSD";
 	}
 }

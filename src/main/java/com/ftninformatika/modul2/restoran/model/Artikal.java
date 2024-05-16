@@ -6,6 +6,8 @@ public class Artikal {
 	private String naziv;
 	private String opis;
 	private double cena;
+	
+	Kategorija kategorija;
 
 	public Artikal() {
 
@@ -49,4 +51,13 @@ public class Artikal {
 	public void setCena(double cena) {
 		this.cena = cena;
 	}
+
+	public Kategorija getKategorija() {
+		return kategorija;
+	}
+
+	public void setKategorija(Kategorija kategorija) {
+		this.kategorija = kategorija;
+	}
+	
 }

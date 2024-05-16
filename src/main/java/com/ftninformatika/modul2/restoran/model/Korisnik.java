@@ -54,6 +54,8 @@ public class Korisnik {
 		return Objects.equals(korisnickoIme, other.korisnickoIme);
 	}
 
+	
+	
 	public String getKorisnickoIme() {
 		return korisnickoIme;
 	}
@@ -101,7 +103,7 @@ public class Korisnik {
 	public void setAdresa(Adresa adresa) {
 		this.adresa = adresa;
 	}
-	
+
 	public String isAdmin() {
 		if(this.administrator)
 			return "Da";

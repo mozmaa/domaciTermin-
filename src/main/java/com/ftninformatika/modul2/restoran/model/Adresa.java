@@ -6,7 +6,7 @@ public class Adresa {
 	 private String ulica;
 	 private String broj;
 	 private String grad;
-	 private int postanskiBroj;
+	 private int postanskiBroj ;
 
 	 public Adresa() {
 
@@ -60,11 +60,11 @@ public class Adresa {
 	    this.postanskiBroj = postanskiBroj;
 	 }
 	 
-	 public String AdresaSaPostanskim() {
+	 public String getAdresaSaPostanskim() {
 		 return "" + ulica + " " + broj + ", " + grad + " " + postanskiBroj;
 	 }
 	 
-	 public String AdresaBezPostanskog() {
+	 public String getAdresaBezPostanskog() {
 		 return "" + ulica + " " + broj + ", " + grad;
 	 }
 }
